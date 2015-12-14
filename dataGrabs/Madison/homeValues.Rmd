@@ -1,0 +1,17 @@
+---
+title: "Home Values in Madison, WI"
+author: "Ed Rogers"
+date: "December 13, 2015"
+output: html_document
+---
+
+## Abstract
+
+This survey will show the results of an analysis of home sale data made publicly available on the City of Madison webpage for the Assessor's Office.
+
+## Import CSV formatted data
+
+```{r importData, cache=TRUE}
+assessments <- read.csv("assessments.csv")
+summary(assessments)
+```
